@@ -1,0 +1,1 @@
+{"comp1": "NC(=O)c1cnc2[nH]ccc2c1NC1CCN(Cc2ccccc2)CC1", "comp2": "CNC(=O)c1cnc2[nH]ccc2c1NC1CCN(Cc2ccccc2)CC1", "comp3": "CNC(=O)c1cnc2[nH]ccc2c1NC1CCN(Cc2cccc(OC)c2)CC1", "comp4": "CNC(=O)c1cnc2[nH]ccc2c1NC1CCN(Cc2cccc(C#N)c2)CC1", "comp5": "O=C(NC1CC1)c1cnc2[nH]ccc2c1NC1CCN(Cc2ccccc2)CC1", "comp6": "CNC(=O)c1cnc2[nH]ccc2c1NCC1CCN(Cc2ccc(Cl)cc2)CC1"}
