@@ -12,22 +12,6 @@ In this repository, we provide datasets for different tasks of classification an
 
 The detail of our model are described in our paper.
 
-## Experiments
-
-### Benchmark
-
-Performance comparison with other methods
-
-![BindingDB_reg](img/BindingDB_reg.png)
-
-Visualization for the BindingDB classification dataset 
-
-![tsne](img/tsne.png)
-
-Finetuning on four selective datasets
-
-![selective](img/selective.png)
-
 ## Usage
 
 ### Requirements
