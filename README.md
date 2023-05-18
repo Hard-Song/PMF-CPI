@@ -12,11 +12,27 @@ In this repository, we provide datasets for different tasks of classification an
 
 The detail of our model are described in our paper.
 
+## Experiments
 
+### Benchmark
 
-## Requirements
+Performance comparison with other methods
 
-* PyTorch
+![BindingDB_reg](img/BindingDB_reg.png)
+
+Visualization for the BindingDB classification dataset 
+
+![tsne](img/tsne.png)
+
+Finetuning on four selective datasets
+
+![selective](img/selective.png)
+
+## Usage
+
+### Requirements
+
+* PyTorch 1.7.1
 
 * torch-geometric
 
@@ -30,21 +46,44 @@ We utlized three embedding methods as follows:
 
 * Bio2Vec:https://github.com/kyu999/biovec
 
-## Usage
+### Dataset structure
 
-Here we provide classification and regression 
+Please organize each dataset as the following structure:
 
-### Training of our model using your drug selectivity dataset
+```
+datasets/
+└── dataset1/
+    ├── ind_test/
+    |   └── affinity.tsv
+        └── proteins.txt
+        └── compounds.txt
+    └── train/
+    |   └── affinity.tsv
+        └── proteins.txt
+        └── compounds.txt
+    └── proteins.txt	# all relevent proteins 
+...
+```
 
-### Fintune of our model using your drug selectivity dataset
+### Training
 
+For different tasks such as regression and classification, the model’s training parameters can be set in `train.py`. Prior to training, it is necessary to generate the required embedding files through data_process.py. The embedding files will be saved at `datasets/dataset_sample/tape`. 
 
+By utilizing the embeddings from these large-scale protein language models, our model can converge quickly with minimal computational resources.
+
+### Test
+
+Before starting the testing by `test.py`, it is important to ensure that the `datasets/dataset_sample/ind_test` folder contains the necessary files for testing, and that the corresponding embedding files have been generated through data_process.py. Alternatively, all required protein sequences can be placed in `datasets/dataset_sample/proteins.txt` and saved as a dictionary. The embedding files will be stored under `datasets/dataset_sample/embedding_method ` folder.
+
+### Fintuning
+
+Based on the model training above, we can fine-tune on a new dataset of selective drugs using the code provided in `fintune.py`. Fine-tuning allows for relatively accurate predictions on most unknown data with the assistance of only a small amount of data.
 
 
 
 ## TODO
 
-Note that protein sequence and SMILES sequence have various lengths, 
+Note that the model has set a maximum sequence length, longer sequences may require a larger model to be trained without truncation, even this does not significantly affect the model’s accuracy. It is also important in future studies to effectively process sequence information into fixed sizes. Additionally, the model attempted to fuse protein and compound features, but further features and integration strategies should be considered.
 
 
 
