@@ -4,7 +4,7 @@
 
 ## Brief introduction
 
-Here we present a sequence-only and pretrained multi-functional model for compound-protein interaction prediction (PMF-CPI) and fine-tune it to assess drug selectivity.  PMF-CPI can accurately predict different drug affinities or opposite interactions toward similar targets, recognizing selective drugs for precise therapeutics.  The code is implementation on PyTorch. Our training data and pre-trained model can be downloaded from xxx.xxx.com
+Here we present a sequence-only and pretrained multi-functional model for compound-protein interaction prediction (PMF-CPI) and fine-tune it to assess drug selectivity.  PMF-CPI can accurately predict different drug affinities or opposite interactions toward similar targets, recognizing selective drugs for precise therapeutics.  The code is implementation on PyTorch. Our training data and pre-trained model can be downloaded from xxx.xxx.
 
 In this repository, we provide datasets for different tasks of classification and regression. The overview of our CPI prediction  is as follows:
 
@@ -59,7 +59,7 @@ By utilizing the embeddings from these large-scale protein language models, our 
 
 Before starting the testing by `test.py`, it is important to ensure that the `datasets/dataset_sample/ind_test` folder contains the necessary files for testing, and that the corresponding embedding files have been generated through data_process.py. Alternatively, all required protein sequences can be placed in `datasets/dataset_sample/proteins.txt` and saved as a dictionary. The embedding files will be stored under `datasets/dataset_sample/embedding_method ` folder.
 
-### Fintuning
+### Fine-tune
 
 Based on the model training above, we can fine-tune on a new dataset of selective drugs using the code provided in `fintune.py`. Fine-tuning allows for relatively accurate predictions on most unknown data with the assistance of only a small amount of data.
 
