@@ -19,7 +19,7 @@ print(device)
 
 embedding_path = "../datasets/%s/%s/"%(dataset,protein_embedding)
 # set protein length capacity, which default=1500(according to BindingDB classification dataset)
-max_length = max(4680,int(open("../datasets/" + dataset +'/max_length.txt','r').read()))
+max_length = max(4580,int(open("../datasets/" + dataset +'/max_length.txt','r').read()))
 model = CPI_classification(device,emb_size=emb_size,max_length=max_length,dropout=0)
 model.to(device)
 
