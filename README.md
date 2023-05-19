@@ -4,7 +4,7 @@
 
 ## Brief introduction
 
-Here we present a sequence-only and pretrained multi-functional model for compound-protein interaction prediction (PMF-CPI) and fine-tune it to assess drug selectivity.  PMF-CPI can accurately predict different drug affinities or opposite interactions toward similar targets, recognizing selective drugs for precise therapeutics.  The code is implementation on PyTorch. Relevant Materials can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1CwSIIR3vjAU7OVJkTg5DdwB50D3xRNwg?usp=share_link).
+Here we present a sequence-only and pretrained multi-functional model for compound-protein interaction prediction (PMF-CPI) and fine-tune it to assess drug selectivity.  PMF-CPI can accurately predict different drug affinities or opposite interactions toward similar targets, recognizing selective drugs for precise therapeutics.  For compound feature extraction, we referred to the code from [GraphDTA](https://github.com/thinng/GraphDTA). Relevant Materials can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1CwSIIR3vjAU7OVJkTg5DdwB50D3xRNwg?usp=share_link).
 
 In this repository, we provide datasets for different tasks of classification and regression. The overview of our CPI prediction  is as follows:
 
@@ -67,10 +67,4 @@ Based on the model training above, we can fine-tune on a new dataset of selectiv
 ## Future Directions
 
 Note that the model has set a maximum sequence length, longer sequences may require a larger model to be trained without truncation, even this does not significantly affect the model’s accuracy. It is also important in future studies to effectively process sequence information into fixed sizes. Additionally, the model attempted to fuse protein and compound features, but further features and integration strategies should be considered.
-
-
-
-
-
-
 
