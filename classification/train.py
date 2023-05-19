@@ -34,7 +34,7 @@ dataset_path = "../datasets/" + dataset + '/train/'
 model_file_dir = dataset + '/'
 embedding_path = "../datasets/%s/%s/"%(dataset,protein_embedding)
 # set protein length capacity, which default=4680(according to BindingDB classification dataset)
-max_length = max(4680,int(open("../datasets/" + dataset +'/max_length.txt','r').read()))
+max_length = max(4580,int(open("../datasets/" + dataset +'/max_length.txt','r').read()))
 model_name = model_file_dir + parmeter + '.pt'
 log_dir = model_file_dir+ 'logs/' 
 writer = SummaryWriter(log_dir=log_dir, filename_suffix=parmeter)
