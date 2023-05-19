@@ -64,7 +64,7 @@ Based on the model training above, we can fine-tune on a new dataset of selectiv
 
 
 
-## TODO
+## Future Directions
 
 Note that the model has set a maximum sequence length, longer sequences may require a larger model to be trained without truncation, even this does not significantly affect the model’s accuracy. It is also important in future studies to effectively process sequence information into fixed sizes. Additionally, the model attempted to fuse protein and compound features, but further features and integration strategies should be considered.
 
