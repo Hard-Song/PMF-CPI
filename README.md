@@ -9,7 +9,6 @@ Here we present a sequence-only and pretrained multi-functional model for compou
 In this repository, we provide datasets for different tasks of classification and regression. The overview of our CPI prediction  is as follows:
 
 ![framework](img/framework.png)
-
 The detail of our model are described in our paper.
 
 ## Usage
@@ -24,11 +23,11 @@ The detail of our model are described in our paper.
 
 We utlized three embedding methods as follows:
 
-* TAPE: https://github.com/li-ziang/tape
+* TAPE([Rao, R. et al](https://arxiv.org/abs/1906.08230)): https://github.com/li-ziang/tape
 
-* ESM-2:https://github.com/facebookresearch/esm
+* ESM-2(Lin, Z. et al.[https://www.science.org/doi/abs/10.1126/science.ade2574]):https://github.com/facebookresearch/esm
 
-* Bio2Vec:https://github.com/kyu999/biovec
+* Bio2Vec( Asgari, E. & Mofrad, M.[https://arxiv.org/pdf/1503.05140v1.pdf]):https://github.com/kyu999/biovec
 
 ### Dataset structure
 
