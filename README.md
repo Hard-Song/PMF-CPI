@@ -14,7 +14,7 @@ The detail of our model are described in our paper.
 ## Usage
 
 ### Requirements
-
+**(to build a docker image, see Dockerfile)**
 * PyTorch 1.7.1
 
 * torch-geometric
